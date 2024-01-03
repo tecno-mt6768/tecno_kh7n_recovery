@@ -1,4 +1,4 @@
-## TWRP device tree for  TECNO SPARK 9 Pro (KH7n)
+# TWRP device tree for  TECNO SPARK 9 Pro (KH7n)
 ## Device image
 ![kh7n](https://main-cdn.sbermegamarket.ru/big2/hlr-system/-19/594/051/051/025/28/600008702613b0.jpg)
 
@@ -17,5 +17,11 @@ Front-camera | 32 MP, Built-in flash
 Bluetooth | 5.0 
 Wi-Fi | 802.11 a/b/g/n  2.4 GHz, 5 GHz
 
-Credits
+## Working
+Unknown
+
+## Issues
+Unknown
+
+## Credits
 [@yurxxl](https://4pda.to/forum/index.php?showuser=8545777), [azwhikaru](https://github.com/azwhikaru)
