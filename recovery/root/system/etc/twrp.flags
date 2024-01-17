@@ -1,4 +1,4 @@
-# Android fstab file.
+г# Android fstab file.
 # The filesystem that contains the filesystem checker binary (typically /system) cannot
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
@@ -22,39 +22,23 @@ flags=display="Tranfs";backup=1;flashimg=1
 /boot            emmc     /dev/block/by-name/boot                               flags=display="Boot";backup=1;slotselect;flashimg=1
 /vbmeta_vendor   emmc     /dev/block/by-name/vbmeta_vendor                      flags=display="Vbmeta Vendor";slotselect;flashimg=1
 /vbmeta_system   emmc     /dev/block/by-name/vbmeta_system                      flags=display="Vbmeta System";slotselect;flashimg=1
-/logo           emmc       /dev/block/by-name/logo
-flags=display="Logo";backup=1;flashimg=1
-/expdb          emmc       /dev/block/by-name/expdb
-flags=display="Expdb";backup=1;flashimg=1
-/seccfg         emmc       /dev/block/by-name/seccfg
-flags=display="Seccfg";backup=1;flashimg=1
-/tee1           emmc       /dev/block/by-name/tee1
-flags=display="trustzone1";backup=1;flashimg=1
-/tee2           emmc       /dev/block/by-name/tee2
-flags=display="trustzone2";backup=1;flashimg=1
-/scp1           emmc       /dev/block/by-name/scp1
-flags=display="Scp1";backup=1;flashimg=1
-/scp2           emmc       /dev/block/by-name/scp2
-flags=display="Scp2";backup=1;flashimg=1
-/sspm_1         emmc       /dev/block/by-name/sspm_1
-flags=display="Sspm_1";backup=1;flashimg=1
-/sspm_2         emmc       /dev/block/by-name/sspm_2
-flags=display="Sspm_2";backup=1;flashimg=1
-/md1img         emmc       /dev/block/by-name/md1img
-flags=display="Md1img";backup=1;flashimg=1
-/md1dsp         emmc       /dev/block/by-name/md1dsp
-flags=display="Md1dsp";backup=1;flashimg=1
-/gz1            emmc       /dev/block/by-name/gz1
-flags=display="Gz1";backup=1;flashimg=1
-/gz2            emmc       /dev/block/by-name/gz2
-flags=display="Gz2";backup=1;flashimg=1
-/spmfw          emmc       /dev/block/by-name/spmfw
-flags=display="Spmfw";backup=1;flashimg=1
-/boot_para      emmc       /dev/block/by-name/boot_para
-flags=display="Boot_para";backup=1;flashimg=1
+/logo           emmc       /dev/block/by-name/logo                              flags=display="Logo";backup=1;flashimg=1
+/expdb          emmc       /dev/block/by-name/expdb                             flags=display="Expdb";backup=1;flashimg=1
+/seccfg         emmc       /dev/block/by-name/seccfg                            flags=display="Seccfg";backup=1;flashimg=1
+/tee1           emmc       /dev/block/by-name/tee1                              flags=display="trustzone1";backup=1;flashimg=1
+/tee2           emmc       /dev/block/by-name/tee2                              flags=display="trustzone2";backup=1;flashimg=1
+/scp1           emmc       /dev/block/by-name/scp1                              flags=display="Scp1";backup=1;flashimg=1
+/scp2           emmc       /dev/block/by-name/scp2                              flags=display="Scp2";backup=1;flashimg=1
+/sspm_1         emmc       /dev/block/by-name/sspm_1                            flags=display="Sspm_1";backup=1;flashimg=1
+/sspm_2         emmc       /dev/block/by-name/sspm_2                            flags=display="Sspm_2";backup=1;flashimg=1
+/md1img         emmc       /dev/block/by-name/md1img                            flags=display="Md1img";backup=1;flashimg=1
+/md1dsp         emmc       /dev/block/by-name/md1dsp                            flags=display="Md1dsp";backup=1;flashimg=1
+/gz1            emmc       /dev/block/by-name/gz1                               flags=display="Gz1";backup=1;flashimg=1
+/gz2            emmc       /dev/block/by-name/gz2                               flags=display="Gz2";backup=1;flashimg=1
+/spmfw          emmc       /dev/block/by-name/spmfw                             flags=display="Spmfw";backup=1;flashimg=1
+/boot_para      emmc       /dev/block/by-name/boot_para                         flags=display="Boot_para";backup=1;flashimg=1
 /dtbo           emmc       /dev/block/by-name/dtbo                              flags=display="Dtbo";backup=1;flashimg=1
-/otp            emmc       /dev/block/by-name/otp
-flags=display="Otp";backup=1;flashimg=1
+/otp            emmc       /dev/block/by-name/otp                               flags=display="Otp";backup=1;flashimg=1
 /vbmeta         emmc       /dev/block/by-name/vbmeta                            flags=display="Vbmeta";backup=1;flashimg=1
 /tkv            emmc       /dev/block/by-name/tkv                               flags=display="Tkv";backup=1;flashimg=1
 # External Storage
