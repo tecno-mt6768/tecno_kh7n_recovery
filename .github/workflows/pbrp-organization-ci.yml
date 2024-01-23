@@ -45,7 +45,7 @@ jobs:
               if [[ ${BUILD_RELEASE_TYPE} == "OFFICIAL" ]]; then echo "PB_OFFICIAL=true"  >> $GITHUB_ENV;fi
 
       # - name: Recovery Compilation
-      #   uses: ./.github/actions/Compiler
+      #   uses: https://github.com/PitchBlackRecoveryProject/vendor_pb -b pb-12.1
        
        - name: Release Builds 
          run: |
