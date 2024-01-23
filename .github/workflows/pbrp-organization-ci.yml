@@ -40,7 +40,7 @@ jobs:
               if [[ ${BUILD_RELEASE_TYPE} == "BETA" ]]; then echo "BETA_BUILD=true"  >> $GITHUB_ENV;fi
               if [[ ${BUILD_RELEASE_TYPE} == "OFFICIAL" ]]; then echo "PB_OFFICIAL=true"  >> $GITHUB_ENV;fi
        - name: Checkout Cleaning Up Runner Repo
-         uses: actions/checkout@v2
+          uses: actions/checkout@v3
          with:
            repository: PitchBlackRecoveryProject/Cleaner
            ref: main
