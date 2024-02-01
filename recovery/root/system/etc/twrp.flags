@@ -13,9 +13,10 @@
 /system_ext     ext4       /dev/block/mapper/system_ext                         flags=display="System_ext"
 /system_ext_image    emmc       /dev/block/mapper/system_ext                         flags=display="System_ext image";backup=1;flashimg=1
 
-
+# Userdata/Metadata partitions
 /metadata       ext4       /dev/block/by-name/md_udc                            flags=display="Metadata";backup=1;flashimg=1
 /data           f2fs       /dev/block/by-name/userdata                          flags=display="Data";fileencryption=aes-256-xts:aes-256-cts:v2
+
 /tranfs         ext4       /dev/block/by-name/tranfs                            flags=display="Tranfs";backup=1;flashimg=1
 /protect_f      ext4       /dev/block/by-name/protect1                          flags=display="Protect_f";backup=1;flashimg=1
 /protect_s      ext4       /dev/block/by-name/protect2                          flags=display="Protect_s";backup=1;flashimg=1
