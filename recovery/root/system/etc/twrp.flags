@@ -1,4 +1,4 @@
-г# Android fstab file.
+# Android fstab file.
 # The filesystem that contains the filesystem checker binary (typically /system) cannot
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
@@ -10,6 +10,9 @@
 /vendor_image		emmc       /dev/block/mapper/vendor                             flags=display="Vendor image";backup=1;flashimg=1
 /product        ext4       /dev/block/mapper/product                            flags=display="Product"
 /product_image  emmc       /dev/block/mapper/product                            flags=display="Product image";backup=1;flashimg=1
+/system_ext     ext4       /dev/block/mapper/system_ext                         flags=display="System_ext"
+/system_ext_image    emmc       /dev/block/mapper/system_ext                         flags=display="System_ext image";backup=1;flashimg=1
+
 
 /metadata       ext4       /dev/block/by-name/md_udc                            flags=display="Metadata";backup=1;flashimg=1
 /data           f2fs       /dev/block/by-name/userdata                          flags=display="Data";fileencryption=aes-256-xts:aes-256-cts:v2
