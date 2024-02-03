@@ -91,7 +91,7 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libkeymaster4 \
     libkeymaster41 \
     android.system.keystore2 \
-    android.hardware.keymaster@4.1\
+    android.hardware.keymaster@4.0\
     libpuresoftkeymasterdevice
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
