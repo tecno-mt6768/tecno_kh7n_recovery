@@ -88,7 +88,7 @@ PRODUCT_PACKAGES += \
 TARGET_RECOVERY_DEVICE_MODULES += \
     libgatekeeper \
     libgatekeeper_aidl \
-    libkeymaster4.so \
+    libkeymaster4 \
     libkeymaster41 \
     libpuresoftkeymasterdevice
 
