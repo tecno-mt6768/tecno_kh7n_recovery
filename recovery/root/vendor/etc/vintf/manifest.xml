@@ -34,7 +34,7 @@
         manifest.xml
 -->
 <manifest version="4.0" type="device" target-level="5">
-    <hal format="aidl">
+    <hal format="hidl">
         <name>android.system.keystore2</name>
         <interface>
             <name>IKeystoreService</name>
