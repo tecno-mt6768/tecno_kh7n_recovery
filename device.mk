@@ -101,7 +101,8 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libgatekeeper.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libgatekeeper_aidl.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \                          $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.0.so\
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.0.so\
     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 
 # OEM otacerts
