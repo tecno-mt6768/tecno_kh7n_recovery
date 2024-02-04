@@ -144,6 +144,12 @@ jobs:
       with:
         swap-size-gb: 12
 
+    - name: Removing languages
+      run: | 
+      cd ./bootable/recovery/gui/theme/common/languages/
+      rm -f !("en.xml"|"ru.xml")
+      working-directory: ${{ steps.pwd.outputs.workspace-folder }}
+
     - name: Building recovery
       run: |
         source build/envsetup.sh
