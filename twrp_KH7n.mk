@@ -31,8 +31,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := KH7n
-PRODUCT_NAME := twrp_kh7n
+PRODUCT_NAME := twrp_KH7n
 PRODUCT_BRAND := TECNO
-PRODUCT_MODEL := Tecno Spark 9 pro
+PRODUCT_MODEL := TECNO KH7n
 PRODUCT_MANUFACTURER := TECNO
-
