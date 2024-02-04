@@ -71,10 +71,19 @@ service vendor.gatekeeper-1-0 /system/bin/android.hardware.gatekeeper@1.0-servic
     group root
     disabled
     seclabel u:r:recovery:s0
-
-on property:hwservicemanager.ready=true
+    
+on property:vendor.sys.listener.registered=true
     start paytrigger_hal_service
     start mobicore
+    start tee-1-1
+    start vendor.keymaster-4-1-trustonic
+    start vendor.gatekeeper-1-0
+
+on property:hwservicemanager.ready=true
+    write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry ++ (FBE encrypted)"
+    start mobicore
+    write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry -- (FBE encrypted)"
+    start paytrigger_hal_service
     start tee-1-1
     start vendor.keymaster-4-1-trustonic
     start vendor.gatekeeper-1-0
