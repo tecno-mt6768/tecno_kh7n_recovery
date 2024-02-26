@@ -33,6 +33,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := KH7n
 PRODUCT_NAME := twrp_KH7n
 PRODUCT_BRAND := TECNO
+PRODUCT_BOARD := mt6768
 PRODUCT_MODEL := TECNO KH7n
 PRODUCT_MANUFACTURER := TECNO
 PRODUCT_RELEASE_NAME := Tecno Spark 9 Pro
