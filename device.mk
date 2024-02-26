@@ -21,6 +21,8 @@ LOCAL_PATH := device/tecno/KH7n
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+PRODUCT_PLATFORM := mt6768
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 

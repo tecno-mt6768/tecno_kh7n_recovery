@@ -24,3 +24,4 @@ COMMON_LUNCH_CHOICES := \
     twrp_KH7n-user \
     twrp_KH7n-userdebug \
     twrp_KH7n-eng
+
