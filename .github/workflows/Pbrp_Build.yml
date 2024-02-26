@@ -36,7 +36,7 @@ on:
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'omni_fire'
+        default: 'twrp_KH7n'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
