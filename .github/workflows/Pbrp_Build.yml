@@ -14,11 +14,6 @@ on:
 env:
   BUILD_RELEASE_TYPE: ${{ github.event.inputs.DEPLOY_TYPE }}
   CHANGELOG: ${{ github.event.inputs.ChangeLogs }}
-  BOT_API: ${{ secrets.BOT_API }}
-  GCF_AUTH_KEY: ${{ secrets.GCF_AUTH_KEY }}
-  GH_BOT_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
-  GitHubMail: ${{ secrets.GitHubMail }}
-  GitHubName: ${{ secrets.GitHubName }}
   TARGET: "pbrp"
   #EXTRA_CMD: "Extra Commands Here"
 
