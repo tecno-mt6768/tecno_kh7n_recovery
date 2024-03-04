@@ -100,9 +100,9 @@ jobs:
       run: |
         mkdir workspace
         cd workspace
-        echo "workspace-folder=$(pwd)" >> $GITHUB_OUTPUT
-        git config --global user.name "shub876"
-        git config --global user.email "8706shubham@gmail.com"
+        echo "workspace-folder=$(pwd)" >> $GITHUB_OUTPUT 
+        git config --global user.name "pbrp-bot"
+        git config --global user.email "pitchblackrecovery@gmail.com"
         repo init --depth=1 -u ${{ github.event.inputs.MANIFEST_URL }} -b ${{ github.event.inputs.MANIFEST_BRANCH }}
       id: pwd
           
