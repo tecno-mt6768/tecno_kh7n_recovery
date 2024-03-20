@@ -160,7 +160,6 @@ TW_EXCLUDE_APEX := false
 
 # TWRP Configuration
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
@@ -181,8 +180,8 @@ TARGET_USES_LOGD := true
 # Tools / Resetprop and magiskboot
 TW_EXCLUDE_BASH := true
 TW_EXCLUDE_TZDATA := true
-#TW_INCLUDE_RESETPROP := true
-#TW_INCLUDE_LIBRESETPROP := true
+TW_INCLUDE_RESETPROP := false
+TW_INCLUDE_LIBRESETPROP := false
 TW_INCLUDE_REPACKTOOLS := false
 TW_NO_FASTBOOT_BOOT := true
 TW_INCLUDE_PYTHON := false
@@ -213,6 +212,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
 
 # PBRP_config
+PB_GO := true 
 PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
 PB_TORCH_MAX_BRIGHTNESS := 1
 
