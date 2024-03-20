@@ -217,8 +217,8 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
 
 # PBRP_config
-#PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
-#PB_TORCH_MAX_BRIGHTNESS := 1
+PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
+PB_TORCH_MAX_BRIGHTNESS := 1
 
 # Device 
 TW_DEVICE_VERSION := Tecno Stark 9 Pro KH7n - isus203
