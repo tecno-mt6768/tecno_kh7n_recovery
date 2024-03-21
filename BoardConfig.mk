@@ -154,9 +154,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_RECOVERY_INITRC := $(DEVICE_PATH)/recovery/root/init.recovery.mt6768.rc
 
 # TWRP-Specific configuration
-#TW_EXCLUDE_MTP := false
+TW_EXCLUDE_MTP := true 
 TW_EXCLUDE_TWRPAPP := true 
 TW_EXCLUDE_APEX := true 
+TW_OEM_BUILD := true
 
 # TWRP Configuration
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
