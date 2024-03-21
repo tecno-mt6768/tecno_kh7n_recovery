@@ -154,7 +154,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_RECOVERY_INITRC := $(DEVICE_PATH)/recovery/root/init.recovery.mt6768.rc
 
 # TWRP-Specific configuration
-#TW_EXCLUDE_MTP := false
+TW_EXCLUDE_MTP := true 
 TW_EXCLUDE_TWRPAPP := true 
 TW_EXCLUDE_APEX := true 
 
