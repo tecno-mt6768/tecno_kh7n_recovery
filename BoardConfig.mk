@@ -36,6 +36,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := Tecno-KH7n
+#TARGET_BOOTLOADER_BOARD_NAME := CY-KH7N-H6919
 TARGET_NO_BOOTLOADER := true
 
 # Platform
@@ -153,27 +154,17 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_RECOVERY_INITRC := $(DEVICE_PATH)/recovery/root/init.recovery.mt6768.rc
 
-# TWRP-Specific configuration
-#TW_EXCLUDE_MTP := true 
-TW_EXCLUDE_TWRPAPP := true 
-TW_EXCLUDE_APEX := true 
-TW_OEM_BUILD := true
-
 # TWRP Configuration
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_BACKUP_EXCLUSIONS := /FFiles/fonts
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_USE_TOOLBOX := true
-TW_EXTRA_LANGUAGES := false 
+TW_EXTRA_LANGUAGES := false
 TW_DEFAULT_LANGUAGE := ru
-TW_NO_SCREEN_BLANK := true
-TARGET_USES_MKE2FS := true
-TW_INCLUDE_NTFS_3G := true
-TW_BACKUP_EXCLUSIONS := /Files/fonts
+TW_SCREEN_BLANK_ON_BOOT := true
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
@@ -182,14 +173,24 @@ TARGET_USES_LOGD := true
 # Tools / Resetprop and magiskboot
 TW_EXCLUDE_BASH := false
 TW_EXCLUDE_TZDATA := false
-TW_INCLUDE_RESETPROP := true 
-TW_INCLUDE_LIBRESETPROP := true 
-#TW_INCLUDE_REPACKTOOLS := true 
+TW_INCLUDE_RESETPROP := true
+TW_INCLUDE_LIBRESETPROP := true
+#TW_INCLUDE_REPACKTOOLS := true
 TW_NO_FASTBOOT_BOOT := true
-TW_EXCLUDE_PYTHON := true 
-TW_EXCLUDE_NANO := true 
+TW_EXCLUDE_PYTHON := true
+TW_EXCLUDE_NANO := true
 TW_EXCLUDE_LPTOOLS := true
 TW_EXCLUDE_LPDUMP := true
+TW_NO_SCREEN_BLANK := true
+TARGET_USES_MKE2FS := true
+TW_INCLUDE_NTFS_3G := true
+TW_USE_TOOLBOX := true
+
+# TWRP-Specific configuration
+#TW_EXCLUDE_MTP := true
+TW_EXCLUDE_TWRPAPP := true
+TW_EXCLUDE_APEX := true
+TW_OEM_BUILD := true
 
 # Density / StatusBar
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
@@ -205,9 +206,9 @@ TW_H_OFFSET := -100
 #SELINUX_IGNORE_NEVERALLOWS := true
 
 # Crypto
-TW_INCLUDE_CRYPTO := true 
-TW_INCLUDE_CRYPTO_FBE := true 
-TW_INCLUDE_FBE_METADATA_DECRYPT := true 
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # Storage
 RECOVERY_SDCARD_ON_DATA := true
