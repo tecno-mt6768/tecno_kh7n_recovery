@@ -187,7 +187,7 @@ TW_INCLUDE_NTFS_3G := true
 TW_USE_TOOLBOX := true
 
 # TWRP-Specific configuration
-#TW_EXCLUDE_MTP := true
+TW_EXCLUDE_MTP := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX := true
 TW_OEM_BUILD := true
@@ -217,7 +217,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
 
 # PBRP_config
-PB_GO := false
+PB_GO := true
 PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
 PB_TORCH_MAX_BRIGHTNESS := 1
 
