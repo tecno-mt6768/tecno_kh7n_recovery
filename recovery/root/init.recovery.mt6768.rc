@@ -73,8 +73,9 @@ service vendor.gatekeeper-1-0 /vendor/bin/android.hardware.gatekeeper@1.0-servic
 
 on property:hwservicemanager.ready=true
     write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry ++ (FBE encrypted)"
-    start mobicore
+    mkdir /data/vendor/mcRegistry 0775 system system
     write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry -- (FBE encrypted)"
+    start mobicore
     start tee-1-1
     start vendor.keymaster-4-1-trustonic
     start vendor.gatekeeper-1-0
