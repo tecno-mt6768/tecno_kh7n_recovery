@@ -156,7 +156,7 @@ TARGET_RECOVERY_INITRC := $(DEVICE_PATH)/recovery/root/init.recovery.mt6768.rc
 
 # TWRP Configuration
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-TW_BACKUP_EXCLUSIONS := /FFiles/fonts
+TW_BACKUP_EXCLUSIONS := /Files/fonts
 TW_EXTRA_LANGUAGES := false
 TW_DEFAULT_LANGUAGE := ru
 TW_SCREEN_BLANK_ON_BOOT := true
