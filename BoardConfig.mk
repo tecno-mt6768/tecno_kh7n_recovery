@@ -185,7 +185,7 @@ TW_USE_TOOLBOX := true
 #TW_EXCLUDE_MTP := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX := true
-TW_OEM_BUILD := true
+#TW_OEM_BUILD := true
 
 # Density / StatusBar
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
