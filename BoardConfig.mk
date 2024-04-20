@@ -218,4 +218,4 @@ PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
 PB_TORCH_MAX_BRIGHTNESS := 1
 
 # Device 
-TW_DEVICE_VERSION := isus203-@4pda/telegram
+TW_DEVICE_VERSION := Tecno Spark 9 Pro - isus203
