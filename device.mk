@@ -45,7 +45,7 @@ AB_OTA_PARTITIONS += \
     preloader \
     system \
     product \
-    system_ext \ 
+    system_ext \
     vendor \
     vbmeta \
     vbmeta_system \
