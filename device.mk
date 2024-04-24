@@ -38,7 +38,7 @@ AB_OTA_PARTITIONS += \
     lk \
     tee \
     scp \
-    logo \ 
+    logo \
     sspm \
     spmfw \
     md1img \
