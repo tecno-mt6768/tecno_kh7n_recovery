@@ -33,7 +33,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := KH7n
 PRODUCT_NAME := twrp_KH7n
 PRODUCT_BRAND := TECNO
-PRODUCT_MODEL := KH7n
+PRODUCT_MODEL := TECNO KH7n
 PRODUCT_MANUFACTURER := Tecno Mobility Limited
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
