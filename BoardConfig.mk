@@ -163,28 +163,29 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
-# Tools / Resetprop and magiskboot
-TW_EXCLUDE_BASH := true
-TW_EXCLUDE_TZDATA := true
-#TW_INCLUDE_RESETPROP := true
-#TW_INCLUDE_LIBRESETPROP := true
-#TW_INCLUDE_REPACKTOOLS := true
+
+# Tools / Resetprop and magiskboot / TWRP-Specific configuration
+TW_INCLUDE_RESETPROP := true
+TW_INCLUDE_LIBRESETPROP := true
+
 TW_NO_FASTBOOT_BOOT := true
-TW_EXCLUDE_PYTHON := true
-TW_EXCLUDE_NANO := true
-TW_EXCLUDE_LPTOOLS := true
-TW_EXCLUDE_LPDUMP := true
 TW_NO_SCREEN_BLANK := true
 TARGET_USES_MKE2FS := true
 TW_INCLUDE_NTFS_3G := true
 TW_USE_TOOLBOX := true
 
-# TWRP-Specific configuration
 #TW_EXCLUDE_MTP := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX := true
+TW_EXCLUDE_PYTHON := true
+TW_EXCLUDE_NANO := true
+TW_EXCLUDE_LPTOOLS := true
+TW_EXCLUDE_LPDUMP := true
+TW_EXCLUDE_BASH := true
+TW_EXCLUDE_TZDATA := true
 
 # Density / StatusBar
+TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TW_INPUT_BLACKLIST := "hbtp_vm"
@@ -202,9 +203,9 @@ TW_H_OFFSET := -100
 #SELINUX_IGNORE_NEVERALLOWS := true
 
 # Crypto
-#TW_INCLUDE_CRYPTO := true
-#TW_INCLUDE_CRYPTO_FBE := true
-#TW_INCLUDE_FBE_METADATA_DECRYPT := true
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # Storage
 RECOVERY_SDCARD_ON_DATA := true
