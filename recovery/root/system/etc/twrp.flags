@@ -3,7 +3,7 @@
 #<mnt_point>      <type>                <device>                                                 <mnt_flags and options>
 
 #Super section 
-/system            ext4         /dev/block/mapper/system                             flags=display="System";storage;backup=1;flashimg=1;slotselect
+/system_root       ext4         /dev/block/mapper/system                             flags=display="System";storage;backup=1;flashimg=1;slotselect
 /vendor            ext4         /dev/block/mapper/vendor                             flags=display="Vendor";storage;backup=1;flashimg=1;slotselect
 /product           ext4         /dev/block/mapper/product                            flags=display="Product";storage;backup=1;flashimg=1;slotselect
 /system_ext        ext4         /dev/block/mapper/system_ext                         flags=display="System_ext";storage;backup=1;flashimg=1;slotselect
