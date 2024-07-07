@@ -29,7 +29,8 @@ ENABLE_VIRTUAL_AB := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 
-# A/BAB_OTA_PARTITIONS += \
+# A/B
+AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     gz \
@@ -47,9 +48,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
     vendor \
     vbmeta \
     vbmeta_system \
-    vbmeta_vendor \
-    vendor_boot
-
+    vbmeta_vendor 
+    
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
