@@ -157,6 +157,7 @@ TW_BACKUP_EXCLUSIONS    := /Files/backup
 TW_EXTRA_LANGUAGES      := true
 TW_DEFAULT_LANGUAGE     := ru
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_SKIP_ADDITIONAL_FSTAB := true
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
@@ -166,7 +167,7 @@ TARGET_USES_LOGD    := true
 
 TW_INCLUDE_RESETPROP    := true
 TW_INCLUDE_LIBRESETPROP := true
-#TW_INCLUDE_REPACKTOOLS  := true
+TW_INCLUDE_REPACKTOOLS  := true
 
 TW_NO_FASTBOOT_BOOT := true
 TW_NO_SCREEN_BLANK  := true
@@ -195,8 +196,10 @@ TW_THEME              := portrait_hdpi
 TARGET_SCREEN_WIDTH   := 1080
 TARGET_SCREEN_HEIGHT  := 2408
 TARGET_SCREEN_DENSITY := 480
-TW_Y_OFFSET := 100
-TW_H_OFFSET := -100
+TW_STATUS_ICONS_ALIGN := center
+#TW_CUSTOM_CPU_POS := 50
+TW_CUSTOM_CLOCK_POS := 630
+#TW_CUSTOM_BATTERY_POS := 800
 
 # Selinux
 SEPOLICY_IGNORE_NEVERALLOWS := true
@@ -215,8 +218,8 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.
 
 # PBRP_config
 #PB_GO := true 
-PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
-PB_TORCH_MAX_BRIGHTNESS := 1
+#PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
+#PB_TORCH_MAX_BRIGHTNESS := 1
 
 # Device 
 TW_DEVICE_VERSION := Tecno Spark 9 Pro - isus203
