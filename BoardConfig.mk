@@ -1,6 +1,7 @@
 #
-# Copyright (C) 2024 The Android Open Source Project
-# Copyright (C) 2024 The TWRP Open Source Project
+# Copyright (C) 2020 The Android Open Source Project
+# Copyright (C) 2020 The TWRP Open Source Project
+# Copyright (C) 2020 SebaUbuntu's TWRP device tree generator
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -124,7 +125,7 @@ BOARD_USES_METADATA_PARTITION := true
 BOARD_ROOT_EXTRA_FOLDERS      += metadata tranfs
 
 # Partitions size
-BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
+BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296 #33554432
 
 # Dynamic Partitions
 BOARD_MAIN_SIZE              := 8837398528
@@ -140,6 +141,9 @@ BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE    := ext4
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
+
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+TARGET_COPY_OUT_PRODUCT    := product
 TARGET_COPY_OUT_VENDOR     := vendor
 
 # Recovery
@@ -149,10 +153,11 @@ TARGET_RECOVERY_FSTAB  := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_RECOVERY_INITRC := $(DEVICE_PATH)/recovery/root/init.recovery.mt6768.rc
 
 # TWRP Configuration
-TW_BACKUP_EXCLUSIONS    := /Files/fonts
-TW_EXTRA_LANGUAGES      := false
+TW_BACKUP_EXCLUSIONS    := /Files/backup
+TW_EXTRA_LANGUAGES      := true
 TW_DEFAULT_LANGUAGE     := ru
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_SKIP_ADDITIONAL_FSTAB := true
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
@@ -160,9 +165,9 @@ TARGET_USES_LOGD    := true
 
 # Tools / Resetprop and magiskboot / TWRP-Specific configuration
 
-#TW_INCLUDE_RESETPROP    := true
-#TW_INCLUDE_LIBRESETPROP := true
-#TW_INCLUDE_REPACKTOOLS  := true
+TW_INCLUDE_RESETPROP    := true
+TW_INCLUDE_LIBRESETPROP := true
+TW_INCLUDE_REPACKTOOLS  := true
 
 TW_NO_FASTBOOT_BOOT := true
 TW_NO_SCREEN_BLANK  := true
@@ -174,11 +179,11 @@ TW_USE_TOOLBOX      := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX    := true
 TW_EXCLUDE_PYTHON  := true
-TW_EXCLUDE_NANO    := true
+TW_EXCLUDE_NANO    := false
 TW_EXCLUDE_LPTOOLS := true
 TW_EXCLUDE_LPDUMP  := true
-TW_EXCLUDE_BASH    := true
-TW_EXCLUDE_TZDATA  := true
+TW_EXCLUDE_BASH    := false
+TW_EXCLUDE_TZDATA  := false
 
 # Density / StatusBar
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
@@ -191,23 +196,30 @@ TW_THEME              := portrait_hdpi
 TARGET_SCREEN_WIDTH   := 1080
 TARGET_SCREEN_HEIGHT  := 2408
 TARGET_SCREEN_DENSITY := 480
-TW_Y_OFFSET := 100
-TW_H_OFFSET := -100
+TW_STATUS_ICONS_ALIGN := center
+#TW_CUSTOM_CPU_POS := 50
+TW_CUSTOM_CLOCK_POS := 630
+#TW_CUSTOM_BATTERY_POS := 800
 
 # Selinux
-#SEPOLICY_IGNORE_NEVERALLOWS := true
-#SELINUX_IGNORE_NEVERALLOWS  := true
+SEPOLICY_IGNORE_NEVERALLOWS := true
+SELINUX_IGNORE_NEVERALLOWS  := true
 
 # Crypto
-#TW_INCLUDE_CRYPTO               := true
-#TW_INCLUDE_CRYPTO_FBE           := true
-#TW_INCLUDE_FBE_METADATA_DECRYPT := true
+TW_INCLUDE_CRYPTO               := true
+TW_INCLUDE_CRYPTO_FBE           := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # Storage
 RECOVERY_SDCARD_ON_DATA     := true
 #BOARD_HAS_NO_REAL_SDCARD   := true 
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
+
+# PBRP_config
+#PB_GO := true 
+#PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
+#PB_TORCH_MAX_BRIGHTNESS := 1
 
 # Device 
 TW_DEVICE_VERSION := Tecno Spark 9 Pro - isus203

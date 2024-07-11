@@ -1,6 +1,7 @@
 #
-# Copyright (C) 2024 The Android Open Source Project
-# Copyright (C) 2024 The TWRP Open Source Project
+# Copyright (C) 2020 The Android Open Source Project
+# Copyright (C) 2020 The TWRP Open Source Project
+# Copyright (C) 2020 SebaUbuntu's TWRP device tree generator
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, device/tecno/KH7n/device.mk)
 
 # Inherit some common TWRP stuff
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := KH7n
@@ -40,4 +41,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=KH7n-OP \
     PRIVATE_BUILD_DESC="vnd_kh7n_h6919-user 12 SP1A.210812.016 350975 release-keys"
 
-BUILD_FINGERPRINT := TECNO/KH7n-OP/TECNO-KH7n:12/SP1A.210812.016/231212V1108:user/release-keys
+BUILD_FINGERPRINT := TECNO/KH7n-OP/TECNO-KH7n:12/SP1A.210812.016/240416V962:user/release-keys
