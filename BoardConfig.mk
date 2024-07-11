@@ -189,16 +189,16 @@ TW_EXCLUDE_TZDATA  := false
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
-TW_INPUT_BLACKLIST    := "hbtp_vm"
-TW_MAX_BRIGHTNESS     := 2047
-TW_DEFAULT_BRIGHTNESS := 1200
-TW_THEME              := portrait_hdpi
-TARGET_SCREEN_WIDTH   := 1080
-TARGET_SCREEN_HEIGHT  := 2408
-TARGET_SCREEN_DENSITY := 480
-TW_STATUS_ICONS_ALIGN := center
-#TW_CUSTOM_CPU_POS := 50
-TW_CUSTOM_CLOCK_POS := 630
+TW_INPUT_BLACKLIST     := "hbtp_vm"
+TW_MAX_BRIGHTNESS      := 2047
+TW_DEFAULT_BRIGHTNESS  := 1200
+TW_THEME               := portrait_hdpi
+TARGET_SCREEN_WIDTH    := 1080
+TARGET_SCREEN_HEIGHT   := 2408
+TARGET_SCREEN_DENSITY  := 480
+TW_STATUS_ICONS_ALIGN  := center
+#TW_CUSTOM_CPU_POS     := 50
+TW_CUSTOM_CLOCK_POS    := 630
 #TW_CUSTOM_BATTERY_POS := 800
 
 # Selinux
@@ -215,11 +215,6 @@ RECOVERY_SDCARD_ON_DATA     := true
 #BOARD_HAS_NO_REAL_SDCARD   := true 
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
-
-# PBRP_config
-#PB_GO := true 
-#PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
-#PB_TORCH_MAX_BRIGHTNESS := 1
 
 # Device 
 TW_DEVICE_VERSION := Tecno Spark 9 Pro - isus203
