@@ -14,4 +14,3 @@ system_ext        /system_ext     ext4         ro          wait,slotselect,avb,l
 /dev/block/by-name/misc         /misc        emmc     defaults defaults
 
 /dev/block/by-name/boot         /boot        emmc     defaults first_stage_mount,nofail,slotselect
-
