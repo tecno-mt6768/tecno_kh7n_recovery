@@ -22,7 +22,7 @@ Wi-Fi | 802.11 a/b/g/n  2.4 GHz, 5 GHz
 - [X] Mount userdata
 - [X] Not known
 
-## Issuest
+## Problems
 - [X] Not known
 
 
