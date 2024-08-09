@@ -184,6 +184,7 @@ TW_EXCLUDE_LPTOOLS := true
 TW_EXCLUDE_LPDUMP  := true
 TW_EXCLUDE_BASH    := false
 TW_EXCLUDE_TZDATA  := false
+TW_INCLUDE_REPACK_TOOL := true
 
 # Density / StatusBar
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
