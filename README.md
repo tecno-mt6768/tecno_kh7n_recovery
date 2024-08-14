@@ -25,6 +25,9 @@ Wi-Fi | 802.11 a/b/g/n  2.4 GHz, 5 GHz
 ## Problems
 - [X] Not known
 
+## Important information 
+The system must be repartitioned 
+
 
 ## Credits
 [@yurxxl](https://4pda.to/forum/index.php?showuser=8545777), [@azwhikaru](https://github.com/azwhikaru)
