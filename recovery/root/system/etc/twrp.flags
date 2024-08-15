@@ -61,5 +61,5 @@
 /md1dsp               emmc         /dev/block/by-name/md1dsp                            flags=display="Md1dsp";backup=1;flashimg=1;slotselect
 
 # Removable Storage
-/external_sd          auto         /dev/block/mmcblk1p1 /dev/block/mmcblk0p1           flags=display="MicroSDcard";storage;wipeingui;removable
-/usb_otg              auto         /dev/block/sda1 /dev/block/sda /dev/block/sdd1      flags=display="USB OTG";storage;wipeingui;removable
+/external_sd          auto         /dev/block/mmcblk1p1 /dev/block/mmcblk0p1            flags=display="MicroSDcard";storage;wipeingui;removable
+/usb_otg              auto         /dev/block/sda1 /dev/block/sda /dev/block/sdd1       flags=display="USB OTG";storage;wipeingui;removable
