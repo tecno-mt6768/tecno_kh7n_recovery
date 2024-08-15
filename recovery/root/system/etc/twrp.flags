@@ -12,7 +12,7 @@
 /product_image        emmc         /dev/block/mapper/product                            flags=display="Product (image)";backup=1;flashimg=1;slotselect;logical
 /system_ext_image     emmc         /dev/block/mapper/system_ext                         flags=display="System_ext (image)";backup=1;flashimg=1;slotselect;logical
 
-# Userdata/Metadata/Tranfs partitions
+# Userdata/Metadata/Tranfs/Storage partitions
 /metadata             ext4         /dev/block/by-name/md_udc                            flags=display="Metadata";backup=1;flashimg=1;wipeingui
 /data                 f2fs         /dev/block/by-name/userdata                          flags=display="Data";storage;fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption
 /storage              f2fs         /data/media/0                                        flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
