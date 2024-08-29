@@ -177,12 +177,12 @@ TARGET_USES_MKE2FS  := true
 TW_INCLUDE_NTFS_3G  := true
 TW_USE_TOOLBOX      := true
 
-#TW_EXCLUDE_MTP    := true
+TW_EXCLUDE_MTP    := false
 TW_EXCLUDE_TWRPAPP := true
-TW_EXCLUDE_APEX    := true
+TW_EXCLUDE_APEX    := false
 TW_EXCLUDE_PYTHON  := true
 TW_EXCLUDE_NANO    := false
-TW_EXCLUDE_LPTOOLS := true
+TW_EXCLUDE_LPTOOLS := false
 TW_EXCLUDE_LPDUMP  := true
 TW_EXCLUDE_BASH    := false
 TW_EXCLUDE_TZDATA  := false
@@ -217,10 +217,8 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := true
 RECOVERY_SDCARD_ON_DATA     := true
 #BOARD_HAS_NO_REAL_SDCARD   := true 
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
 
 # PBRP_config
-#PB_GO := true 
 PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
 PB_TORCH_MAX_BRIGHTNESS := 1
 
