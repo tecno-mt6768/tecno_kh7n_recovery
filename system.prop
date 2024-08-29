@@ -28,6 +28,3 @@ ro.vendor.keymaster_version=4.1
 ro.hardware.gatekeeper=trustonic
 ro.hardware.kmsetkey=trustonic
 ro.hardware.paytrigger=trustonic
-
-####
-ro.treble.enabled=true
