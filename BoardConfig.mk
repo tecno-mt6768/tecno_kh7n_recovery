@@ -217,6 +217,7 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := true
 RECOVERY_SDCARD_ON_DATA     := true
 #BOARD_HAS_NO_REAL_SDCARD   := true 
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_MTP_DEVICE := /dev/usb-ffs
 
 # PBRP_config
 PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
