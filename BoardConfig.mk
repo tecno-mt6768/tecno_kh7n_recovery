@@ -183,7 +183,6 @@ TARGET_USES_MKE2FS  := true
 TW_INCLUDE_NTFS_3G  := true
 TW_USE_TOOLBOX      := true
 
-TW_EXCLUDE_MTP    := false
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX    := false
 TW_EXCLUDE_PYTHON  := true
@@ -238,6 +237,10 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 RECOVERY_SDCARD_ON_DATA     := true
 #BOARD_HAS_NO_REAL_SDCARD   := true 
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+
+# MTP
+TW_EXCLUDE_MTP := false
+TW_HAS_MTP := true
 
 # USB Mounting
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
