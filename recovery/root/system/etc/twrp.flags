@@ -15,6 +15,7 @@
 /tranfs               ext4         /dev/block/by-name/tranfs                            flags=display="Tranfs";backup=1;flashimg=1;wipeingui
 /magisk_modules       f2fs         /data/adb/modules                                    flags=display="Magisk Modules";usermrf;fsflags="bind"
 
+
 # Other partitions
 /boot_para            emmc         /dev/block/by-name/boot_para                         flags=display="Boot_para";backup=1;flashimg=1
 /boot                 emmc         /dev/block/by-name/boot                              flags=backup=1;display="Boot";flashimg=1;backup=1;slotselect
