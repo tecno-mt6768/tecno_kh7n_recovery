@@ -26,19 +26,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from KH7n device
 $(call inherit-product, device/tecno/KH7n/device.mk)
 
-# Inherit some common PBRP stuff
-$(call inherit-product, vendor/pb/config/common.mk)
+# Inherit some common TWRP stuff
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := KH7n
 PRODUCT_NAME := twrp_KH7n
 PRODUCT_BRAND := TECNO
-PRODUCT_MODEL := TECNO KH7n
+PRODUCT_MODEL := KH7n
 PRODUCT_MANUFACTURER := Tecno Mobility Limited
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=TECNO-KH7n \
     PRODUCT_NAME=KH7n-OP \
-    PRIVATE_BUILD_DESC="vnd_kh7n_h6919-user 12 SP1A.210812.016 350975 release-keys"
+    PRIVATE_BUILD_DESC="vnd_kh7n_h6919-user 12 SP1A.210812.016 642686 release-keys"
 
-BUILD_FINGERPRINT := TECNO/KH7n-OP/TECNO-KH7n:12/SP1A.210812.016/240416V962:user/release-keys
+BUILD_FINGERPRINT := TECNO/KH7n-RU/TECNO-KH7n:12/SP1A.210812.016/240620V1708:user/release-keys
